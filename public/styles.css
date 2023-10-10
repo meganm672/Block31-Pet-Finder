@@ -1,4 +1,26 @@
+body{
+    background-color: rgb(142, 227, 227);
+}
 h1{
-    color: violet;
+    color: rgb(113, 12, 113);
     text-align: center;
+}
+div{
+    text-align: center;
+}
+button{
+    color:aqua;
+    background-color: rgb(95, 84, 84);
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+}
+#petName{
+  display: inline-block;
+  list-style-position: outside;
+  list-style-type: square;
+}
+.pet-list{
+    color: blue;
+    font-size: 24px;
 }

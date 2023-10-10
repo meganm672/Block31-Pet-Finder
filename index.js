@@ -24,7 +24,7 @@ app.use(express.static('public'));
 
 // hello world route
 app.get('/api', (req, res) => {
-    res.send('Hello World!');
+    res.send('Hello to my fellow coders!');
 });
 
 // get all pets from the database
@@ -42,7 +42,7 @@ app.get('/api/v1/pets/owner', (req, res) => {
     const pet = pets.filter(pet => pet.owner.toLowerCase() === owner.toLowerCase());
 
     // send the pet as a response
-    res.send("Returning response with the query param 'owner' set to " + pet)
+    res.send(pet)
 });
 
 // get pet by name like /fido
@@ -54,7 +54,7 @@ app.get('/api/v1/pets/:name', (req, res) => {
     const pet = pets.find(pet => pet.name.toLowerCase() === name.toLowerCase());
   
     // send the pet as a response
-    res.send('Returting response to request for the dynamic route: '+ pet)
+    res.send(pet)
 });
 
 app.listen(PORT, () => {
